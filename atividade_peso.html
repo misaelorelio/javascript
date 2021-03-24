@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta charset="utf-8">
+	<script>
+		
+		var nome = prompt('Digite seu nome: ')
+		var altura = prompt('Digite sua altura em centímetros: ')
+		var peso = prompt('Informe seu peso: ')
+		var m 
+
+		altura = parseFloat(altura)
+		peso = parseFloat(peso)
+		altura = altura / 100
+		altura = altura * altura
+		m =  peso / altura
+
+	
+
+		if (m < 16 ){
+			document.write('Nome: ' + nome + '<br />')
+			document.write('Massa corporal: ' + m + '<br />')
+			document.write('Baixo peso muito grave')
+		}
+		else if (m < 16.99 && m > 16) {
+			document.write('Nome: ' + nome + '<br />')
+			document.write('Massa corporal: ' + m + '<br />')
+			document.write('Baixo peso grave')
+		}
+		else if (m < 18.49 && m > 17 ) {
+			document.write('Nome: ' + nome + '<br />')
+			document.write('Massa corporal: ' + m + '<br />')
+			document.write('Baixo peso')
+		}
+		else if (m > 18.50 && m < 24.99 ) {
+			document.write('Nome: ' + nome + '<br />')
+			document.write('Massa corporal: ' + m + '<br />')
+			document.write('Peso normal')
+		}
+		else if (m > 25 && m < 29.99) {
+			document.write('Nome: ' + nome + '<br />')
+			document.write('Massa corporal: ' + m + '<br />')
+			document.write('Sobrepeso')
+		}
+		else if (m > 30 && m < 34.99) {
+			document.write('Nome: ' + nome + '<br />')
+			document.write('Massa corporal: ' + m + '<br />')
+			document.write('Obesidade grau I')
+		}
+		else if (m > 35 && m < 39.99) {
+			document.write('Nome: ' + nome + '<br />')
+			document.write('Massa corporal: ' + m + '<br />')
+			document.write('Obesidade grau II')
+		}
+		else if (m > 40) {
+			document.write('Nome: ' + nome + '<br />')
+			document.write('Massa corporal: ' + m + '<br />')
+			document.write('Obesidade grau III')
+		}
+	</script>	
+		
+</head>
+<body>
+	
+</body>
+</html>
