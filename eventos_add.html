@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <style type="text/css">
+      
+      #caixa {
+        height: 100px;
+        width: 100px;
+        background: blue;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+    </style>
+    <script type="text/javascript">
+      
+      function msg(){
+        alert('Misael Estudando muito')
+      }
+
+      function cor(obj,cor){
+        obj.style.backgroundColor=cor
+      }
+
+      function addEventos(){
+        var obj=document.getElementById('caixa')
+        obj.addEventListener('click',msg)
+        obj.addEventListener('mouseover', function(event){
+          cor(obj,'yellow')
+        })
+        obj.addEventListener('mouseout', function(event){
+          cor(obj,'blue')
+        })
+      }
+      window.addEventListener('load',addEventos)
+    </script>
+    
+  </head>
+
+  <body>
+    
+    <div id="caixa">
+      
+    </div>
+   
+  </body>
+</html>
