@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+
+        const now = moment(new Date());
+        const past = moment("2014-07-07");
+        const duration = moment.duration(now.diff(past));
+
+        const days = duration.asDays();
+        console.log(now());
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
