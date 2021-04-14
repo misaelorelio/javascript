@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* var num1 = 10
+         var num2 = 20
+         var num3 = 20
+         var num4 = 50
+         var num5 = 90
+         var num6 = 80
+         var num7 = 70
+ 
+         num1 = parseInt(num1)
+         num2 = parseInt(num2)
+         num3 = parseInt(num3)
+         num4 = parseInt(num4)
+         num5 = parseInt(num5)
+         num6 = parseInt(num6)
+         num7 = parseInt(num7)
+ 
+         var soma = (num1+num2+num3+num4+num5+num6+num7)/7
+ 
+         console.log(soma)*/
+
+        //EXERCÍCIO 4//
+
+        function verIdade (){
+            var idade = document.getElementById('campo').value
+            var maior = 0
+            var menor = 0
+
+           for(i=0; idade.length; i++)
+           if(parseInt(idade[i] >= 18)){
+             maior++
+           }
+           else{
+               menor++
+               document.write('Mariores'+ maior+ ' - Menores ' + menor)
+           }
+           
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <input type="text" name="" id="campo">
+    <button type="button" onclick="verIdade()">Verificar</button>
+
+</body>
+
+</html>
