@@ -29,7 +29,7 @@
 
         //EXERCÍCIO 4//
 
-        function verIdade (){
+        /*function verIdade (){
             var idade = document.getElementById('campo').value
             var maior = 0
             var menor = 0
@@ -40,8 +40,26 @@
            }
            else{
                menor++
-               document.write('Mariores'+ maior+ ' - Menores ' + menor)
+               document.write('Mariores'+ maior+ '  Menores ' + menor)
            }
+           
+        }*/
+        // ATIVIDADE ALEATÓRIA
+        /*function clique(corFundo){
+            document.getElementById('caixa').style.background = corFundo  
+
+        }*/
+        function idadeInforma(){
+            var idade = document.getElementById('campo').value
+            
+
+            if(idade < 18){
+                document.write("Você é menor de idade")
+            }
+            else{
+                alert('Você  é maior de idade')
+            }
+
            
         }
 
@@ -53,8 +71,19 @@
 
 <body>
 
-    <input type="text" name="" id="campo">
+   <!--<input type="text" name="" id="campo">
     <button type="button" onclick="verIdade()">Verificar</button>
+   
+    <div id="caixa" style="border: 1px solid red;">
+     clique aqui
+    </div>
+    <button type="button" onclick="clique('red')">Vermelho</button>
+    <button type="button" onclick="clique('blue')">Azul</button>--> 
+
+    <h1>Informe sua idade</h1>
+    <input type="text"  id="campo" placeholder="Idade aqui">
+    <button type="button" onclick="idadeInforma()">Cadastrar</button>
+
 
 </body>
 
