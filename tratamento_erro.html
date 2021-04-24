@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        var  video = Array()
+
+        video[1] = Array()
+        video[1]= ["nome"] = "Sombra e Ossos"
+        video[1] = ["Categoria"] = "Aventura"
+
+        function getVideo(video){
+            try{
+                console.log(video[0]['nome'])
+            }
+            catch(erro){
+                tratarErro(erro)
+                console.log("Agora vamos tratar o erro")
+                throw new Error("Houve um erro más acalme-se")
+            }
+            finally{
+                console.log("Sempre passa por aqui")
+
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
