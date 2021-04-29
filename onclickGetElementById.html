@@ -10,10 +10,12 @@
 </head>
 
 <body>
-    <div id="lampada" style="width: 200px; height: 200px; border: 1px solid black;"></div>
+    <div id="lampada" style="width: 400px; height: 200px; border: 1px solid black;"></div>
 
     <button onclick="corFundo('red')">Vermelho</button>
     <button onclick="corFundo2('green')"> Verde</button>
+    <button onclick="sumir()">Sumir</button>
+    <button onclick="voltar()">Aparecer</button>
 
     <script>
 
@@ -23,6 +25,14 @@
         }
         function corFundo2() {
             document.getElementById('lampada').style.background = 'green'
+        }
+
+        function sumir(){
+            document.getElementById('lampada').style.display ='none'
+        }
+
+        function voltar(){
+            document.getElementById('lampada').style.display =''
         }
 
     </script>
