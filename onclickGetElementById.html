@@ -11,11 +11,13 @@
 
 <body>
     <div id="lampada" style="width: 400px; height: 200px; border: 1px solid black;"></div>
+    <p id="texto"></p>
 
     <button onclick="corFundo('red')">Vermelho</button>
     <button onclick="corFundo2('green')"> Verde</button>
     <button onclick="sumir()">Sumir</button>
     <button onclick="voltar()">Aparecer</button>
+
 
     <script>
 
@@ -32,9 +34,10 @@
         }
 
         function voltar(){
-            document.getElementById('lampada').style.display =''
+            document.getElementById('lampada').style.display ='block'
         }
 
+        document.getElementById('texto').innerHTML = 'Olá, testando novas tags'
     </script>
 </body>
 
