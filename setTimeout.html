@@ -16,7 +16,17 @@
     <script>
         // setTimeout(function() {document.write('teste') }, 2000)
 
-       // setInterval(function () { document.write('teste '+ "<br>") }, 200)
+        var i = 5
+
+        setInterval(function () {
+            document.write(i)
+            i--
+            if(i === 0){
+                window.location.reload( )
+            }
+        }, 1000)
+
+
     </script>
 </body>
 
