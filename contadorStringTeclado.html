@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade frase teclado</title>
+    <script>
+        var texto = window.prompt("Digite uma frase")
+        document.write(texto + "<br>")
+
+        tamanho = texto.length
+        document.write("<br>")
+
+        for (var i = 0; i < texto.length;) {
+            document.write("caracteres na posição" + i + ":" + texto.charAt(i))
+            i++
+            document.write("<br>")
+        }
+        document.write("<br>")
+        document.write("primeiro caracter" + texto.charAt(0) + "<br>")
+        document.write("Ultimo caracter" + texto.charAt(texto.length - 1))
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
