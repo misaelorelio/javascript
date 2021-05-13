@@ -12,6 +12,7 @@
         class Sofa {
             constructor() {
                 this.tipo = 1
+                this.modelo = true
 
             }
             tipoSofa() {
@@ -22,10 +23,18 @@
                     console.log('Sofá normal')
                 }
             }
+            modeloSofa(){
+                if(this.modelo != true){
+                    console.log('não é lateral')
+                }
+                else{
+                    console.log('é um sofá lateral')
+                }
+            }
         }
         let sofa = new Sofa()
-
         sofa.tipoSofa()
+        sofa.modeloSofa()
 
     </script>
 </head>
