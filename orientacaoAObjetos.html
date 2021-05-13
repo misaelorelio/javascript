@@ -9,9 +9,32 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
-        class Cadeira{
-            
+        class ContaBancaria{
+            constructor(){
+                this.agencia =1234
+                this.conta = 12345
+                this.saldo = 50
+                this.limite = 1000
+            }
+            depositar(valorDeposito){
+                this.saldo += valorDeposito
+            }
+            sacar(valorSaque){
+                this.saldo -= valorSaque
+            }
+            saldo(){
+                return this.saldo
+            }
         }
+
+        let conta1 = new ContaBancaria()
+
+        console.log(conta1.depositar(3000))
+        console.log(conta1.agencia)
+        console.log(conta1.conta)
+        console.log(conta1.saldo)
+        conta1.sacar(2000)
+        console.log(conta1.saldo)
     </script>
 </head>
 
