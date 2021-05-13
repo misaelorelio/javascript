@@ -25,9 +25,15 @@
             saldo(){
                 return this.saldo
             }
+            transferir(valor, conta){
+                this.conta -= valor
+                conta += valor
+            }
         }
 
         let conta1 = new ContaBancaria()
+        let conta2 = new ContaBancaria()
+        conta2.saldo
 
         console.log(conta1.depositar(3000))
         console.log(conta1.agencia)
@@ -35,7 +41,8 @@
         console.log(conta1.saldo)
         conta1.sacar(2000)
         console.log(conta1.saldo)
-    </script>
+        conta1.transferir()
+        </script>
 </head>
 
 <body>
