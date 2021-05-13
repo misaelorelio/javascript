@@ -11,30 +11,22 @@
     <script type="text/babel">
         class Sofa {
             constructor() {
-                this.tipo
-                this.qtdAssento
-                this.modelo
+                this.tipo = 1
+
             }
-            Tipo(){
-                if(tipo === true){
-                    return 'Sofá cama'
+            tipo() {
+                if (tipo === 1) {
+                    console.log('Sofá cama')
                 }
-                else{
-                    return 'Sofá normal'
-                }
-            }
-            quantidadeDeAssento(){
-                if(qtdAssento > 4){
-                    return 'sofá tamanho fámilia'
-                }
-                else if(qtdAssento < 3 && qtdAssento > 2){
-                    return 'sofá pequeno porte'
-                }
-                else{
-                    return 'Sofá namoradeira'
+                else {
+                    console.log('Sofá normal')
                 }
             }
         }
+        let sofa = new Sofa()
+
+        sofa.tipo()
+
     </script>
 </head>
 
