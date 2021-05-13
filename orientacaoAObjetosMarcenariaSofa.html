@@ -5,15 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcenaria</title>
+    <title>Marcenaria sofa</title>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
-        class Sofa{
-            constructor(){
+        class Sofa {
+            constructor() {
                 this.tipo
                 this.qtdAssento
                 this.modelo
+            }
+            Tipo(){
+                if(tipo === true){
+                    return 'Sofá cama'
+                }
+                else{
+                    return 'Sofá normal'
+                }
             }
         }
     </script>
