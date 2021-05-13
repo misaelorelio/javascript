@@ -23,6 +23,17 @@
                     return 'Sofá normal'
                 }
             }
+            quantidadeDeAssento(){
+                if(qtdAssento > 4){
+                    return 'sofá tamanho fámilia'
+                }
+                else if(qtdAssento < 3 && qtdAssento > 2){
+                    return 'sofá pequeno porte'
+                }
+                else{
+                    return 'Sofá namoradeira'
+                }
+            }
         }
     </script>
 </head>
