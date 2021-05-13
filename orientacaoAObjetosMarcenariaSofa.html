@@ -10,9 +10,9 @@
 
     <script type="text/babel">
         class Sofa {
-            constructor() {
-                this.tipo = 1
-                this.modelo = true
+            constructor(tipo, modelo) {
+                this.tipo = tipo
+                this.modelo = modelo
 
             }
             tipoSofa() {
@@ -32,7 +32,7 @@
                 }
             }
         }
-        let sofa = new Sofa()
+        let sofa = new Sofa(2, false)
         sofa.tipoSofa()
         sofa.modeloSofa()
 
