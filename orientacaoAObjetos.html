@@ -12,7 +12,18 @@
         class ContaBancaria{
             constructor(){
                 this.agencia =1234
-                
+                this.conta = 12345
+                this.saldo = 50
+                this.limite = 1000
+            }
+            depositar(valorDeposito){
+                this.saldo += valorDeposito
+            }
+            sacar(valorSaque){
+                this.saldo -= valorSaque
+            }
+            saldo(){
+                return this.saldo
             }
         }
     </script>
